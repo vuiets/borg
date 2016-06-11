@@ -1,7 +1,7 @@
 {
   "name": "borg",
-  "version": "0.0.0",
-  "description": "Small description for borg goes here",
+  "version": "0.1.0",
+  "description": "A tachyons playground",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -20,6 +20,8 @@
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
+    "broccoli-less-single": "^0.6.2",
+    "broccoli-merge-trees": "^1.1.1",
     "ember-ajax": "0.7.1",
     "ember-cli": "2.5.1",
     "ember-cli-app-version": "^1.0.0",
@@ -38,5 +40,8 @@
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
     "loader.js": "^4.0.1"
+  },
+  "dependencies": {
+    "tachyons": "git+https://github.com/tachyons-css/tachyons.git#d8f378f59df22e512cd0373164c0899aa6adbe12"
   }
 }
