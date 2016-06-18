@@ -11,15 +11,15 @@ module.exports = function (defaults) {
 		nodes = [],
 		appStyles = app.options.trees.styles;
 
-	console.log("_______________________________________");
-	console.log("app:", app);
-
 	nodes.push(compileLess(
 		appStyles,
 		'app.less',
 		'assets/borg.css',
 		{
-			paths: ['node_modules/tachyons/css']
+			paths: [
+				'node_modules/tachyons/css',
+				'node_modules/colors.css/css'
+			]
 		}
 	));
 
