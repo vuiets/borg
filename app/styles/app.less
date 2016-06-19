@@ -1,54 +1,21 @@
-@import (less) "tachyons.css";
-@import (less) "colors.css";
-
-@fontPath: '/assets/fonts';
-
-/* Typefaces */
-
-@font-face {
-  font-family: 'Cabin Bold';
-  src: url('@{fontPath}/Cabin-Bold.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Amatic Bold';
-  src: url('@{fontPath}/Amatic-Bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Amatic Regular';
-  src: url('@{fontPath}/AmaticSC-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Josefin Sans Regular';
-  src: url('@{fontPath}/JosefinSans-Regular.ttf') format('truetype');
-}
-
-
-/* Sans-Serif Typefaces */
-
-// Cabin
-.cabin-bold {
-  font-family: 'Cabin Bold', helvetica, sans-serif;
-}
-
-// Amatic
-.amatic-bold {
-  font-family: 'Amatic Bold', Copperplate, fantasy;
-}
-
-.amatic-regular {
-  font-family: 'Amatic Regular', 'Copperplate Gothic Light', fantasy;
-}
-
-.josefin-sans-regular {
-  font-family: 'Josefin Sans Regular', 'Copperplate Gothic Light', fantasy;
-}
-
-// Josephine Sans
+@import (less) 'tachyons.css';
+@import (less) 'colors.css';
+@import (less) 'btns.css';
+@import 'fonts.less';
 
 /* User Agent Overrides */
 h1 {
   margin: 0;
+}
+
+.ulink {
+  border-bottom-style: solid;
+  border-bottom-width: 0.125rem;
+  border-bottom-color: transparent;
+}
+
+.ulink:hover {
+  border-bottom-style: solid;
+  border-bottom-width: 0.125rem;
+  border-bottom-color: inherit;
 }

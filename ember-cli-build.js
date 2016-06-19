@@ -18,7 +18,8 @@ module.exports = function (defaults) {
 		{
 			paths: [
 				'node_modules/tachyons/css',
-				'node_modules/colors.css/css'
+				'node_modules/colors.css/css',
+				'node_modules/btns/css'
 			]
 		}
 	));
