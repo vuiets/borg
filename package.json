@@ -42,6 +42,8 @@
     "loader.js": "^4.0.1"
   },
   "dependencies": {
+    "btns": "^1.1.0",
+    "colors.css": "^3.0.0",
     "tachyons": "git+https://github.com/tachyons-css/tachyons.git#d8f378f59df22e512cd0373164c0899aa6adbe12"
   }
 }
