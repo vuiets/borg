@@ -5,20 +5,21 @@
 
 @color-transparent: transparent;
 
-@btn-s: 50px;
+@btn-s: 3rem;
 @btn-s--half: @btn-s / 2;
+@sndcld-ctrllr-w: 1.0625rem;
 
 .sndcld-ply-btn  {
+  &:extend(.dib);
   height: @btn-s;
   width: @btn-s;
-  display: block;
   overflow: hidden;
   position: relative;
 }
 
 .lr-mixin() {
   &:extend(.bg-black, .h-100);
-  width: 36%;
+  width: @sndcld-ctrllr-w;
   -webkit-transition: all ~'@{quarter}s' ease;
   transition: all ~'@{quarter}s' ease;
 }

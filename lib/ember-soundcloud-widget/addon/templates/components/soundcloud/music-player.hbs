@@ -1,7 +1,14 @@
-<a class="sndcld-ply-btn {{pausedClass}}" {{action 'togglePlay' on='click'}}>
-    <div class="sndcld-ctrllr-l"></div>
-    <div class="sndcld-ctrllr-r"></div>
-    <div class="sndcld-ctrllr-trngl--1"></div>
-    <div class="sndcld-ctrllr-trngl--2"></div>
-</a>
-<div><p>This a track</p></div>
+<div class="dtc v-mid">
+    <a class="sndcld-ply-btn {{pausedClass}}" {{action 'togglePlay' on='click'}}>
+        <div class="sndcld-ctrllr-l"></div>
+        <div class="sndcld-ctrllr-r"></div>
+        <div class="sndcld-ctrllr-trngl--1"></div>
+        <div class="sndcld-ctrllr-trngl--2"></div>
+    </a>
+</div>
+
+<div class="ph2 ph3-ns">
+    <h1 class="f2">{{data.name}}
+	</h1>
+    <p class="f4 p--subheadline gray">by {{data.artist}}</p>
+</div>
