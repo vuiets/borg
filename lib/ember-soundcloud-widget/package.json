@@ -1,0 +1,9 @@
+{
+  "name": "ember-soundcloud-widget",
+  "keywords": [
+    "ember-addon"
+  ],
+  "dependencies": {
+    "ember-cli-htmlbars": "^1.0.8"
+  }
+}

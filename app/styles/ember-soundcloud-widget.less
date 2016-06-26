@@ -1,0 +1,87 @@
+/* Controls */
+@quarter: 0.25;
+@half: 0.5;
+@full: 1;
+
+@color-transparent: transparent;
+
+@btn-s: 50px;
+@btn-s--half: @btn-s / 2;
+
+.sndcld-ply-btn  {
+  height: @btn-s;
+  width: @btn-s;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.lr-mixin() {
+  &:extend(.bg-black, .h-100);
+  width: 36%;
+  -webkit-transition: all ~'@{quarter}s' ease;
+  transition: all ~'@{quarter}s' ease;
+}
+
+.lr-psd-mixin() {
+  width: percentage(@half);
+}
+
+.translate(@value) {
+  -webkit-transform: translate(0, percentage(@value));
+  transform: translate(0, percentage(@value));
+}
+
+
+.sndcld-ctrllr-l {
+  .lr-mixin;
+  &:extend(.fl);
+  overflow: hidden;
+}
+
+.sndcld-ctrllr-r {
+  .lr-mixin;
+  &:extend(.fr);
+}
+
+.sndcld-ply-btn--psd {
+
+  .sndcld-ctrllr-l, .sndcld-ctrllr-r {
+    .lr-psd-mixin;
+  }
+
+  .sndcld-ctrllr-trngl--1 {
+    .translate(-@half);
+  }
+
+  .sndcld-ctrllr-trngl--2 {
+    .translate(@half);
+  }
+
+}
+
+.triangle-mixin() {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: @color-transparent;
+  width: 0;
+  height: 0;
+  border-right: @btn-s solid #FFFFFF;
+  border-top: @btn-s--half solid @color-transparent;
+  border-bottom: @btn-s--half solid @color-transparent;
+  -webkit-transition: -webkit-transform ~'@{quarter}s' ease;
+  transition: -webkit-transform ~'@{quarter}s' ease;
+  transition: transform ~'@{quarter}s' ease;
+  transition: transform ~'@{quarter}s' ease, -webkit-transform ~'@{quarter}s' ease;
+}
+
+.sndcld-ctrllr-trngl--1 {
+  .triangle-mixin;
+  .translate(-@full);
+}
+
+.sndcld-ctrllr-trngl--2 {
+  .triangle-mixin;
+  .translate(@full);
+}

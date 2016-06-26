@@ -1,12 +1,12 @@
+/* Third party imports */
 @import (less) 'tachyons.css';
 @import (less) 'colors.css';
 @import (less) 'btns.css';
-@import 'fonts.less';
 
-/* User Agent Overrides */
-h1 {
-  margin: 0;
-}
+/* app imports */
+@import 'fonts.less';
+@import 'user-agent-overrides.less';
+@import 'ember-soundcloud-widget';
 
 .ulink {
   border-bottom-style: solid;
@@ -15,7 +15,6 @@ h1 {
 }
 
 .ulink:hover {
-  border-bottom-style: solid;
-  border-bottom-width: 0.125rem;
+  .ulink;
   border-bottom-color: inherit;
 }
