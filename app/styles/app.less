@@ -3,6 +3,12 @@
 
 @fontPath: '/assets/fonts';
 
+/* Colors */
+
+@color-white: #fff;
+@color-mercury: #e5e5e5;
+@color-gray: #7f7f7f;
+
 /* Typefaces */
 
 @font-face {
@@ -51,4 +57,17 @@
 /* User Agent Overrides */
 h1 {
   margin: 0;
+}
+
+/* Blockquotes */
+blockquote {
+  padding: 0 1rem;
+  color: @color-gray;
+  border-left: .25rem solid @color-mercury;
+  font-size: 1.125rem;
+  margin: 0;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
 }
