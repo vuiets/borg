@@ -20,3 +20,18 @@
     </div>
 </section>
 
+<section class="pv7 v-mid cabin-bold bg-yellow">
+    <h1 class="tc f-headline">Blockquotes</h1>
+    <div class="ph7 josefin-sans-regular">
+		<h2 class="f2">h3</h2>
+        <blockquote class="f3">Traditional publishing formats like newspapers and magazines offer good examples of how to apply a visual hierarchy to fonts. They combine fonts in way that visually separates different textual elements like headlines, sub-headlines, body copy, and captions. Qualities such as size, boldness (also known as “weight”), and spacing (including leading, the space between lines, and kerning, the space between letters) all contribute to how the eye should navigate the page and what text should attract attention first.</blockquote>
+        <h2 class="f2">h3 measure</h2>
+        <blockquote class="f3 measure">Traditional publishing formats like newspapers and magazines offer good examples of how to apply a visual hierarchy to fonts. They combine fonts in way that visually separates different textual elements like headlines, sub-headlines, body copy, and captions. Qualities such as size, boldness (also known as “weight”), and spacing (including leading, the space between lines, and kerning, the space between letters) all contribute to how the eye should navigate the page and what text should attract attention first.</blockquote>
+        <h2 class="f2">h3 measure lh-copy</h2>
+        <blockquote class="f3 measure lh-copy">Traditional publishing formats like newspapers and magazines offer good examples of how to apply a visual hierarchy to fonts. They combine fonts in way that visually separates different textual elements like headlines, sub-headlines, body copy, and captions. Qualities such as size, boldness (also known as “weight”), and spacing (including leading, the space between lines, and kerning, the space between letters) all contribute to how the eye should navigate the page and what text should attract attention first.</blockquote>
+        <h2 class="f2">h2 measure lh-copy</h2>
+		{{#each quotables as |quotable|}}
+			{{popo/e-blckqt quote=quotable}}
+		{{/each}}
+    </div>
+</section>
