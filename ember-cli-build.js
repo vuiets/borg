@@ -17,7 +17,7 @@ module.exports = function (defaults) {
 		'assets/borg.css',
 		{
 			paths: [
-				'node_modules/tachyons/css',
+				'vendor',
 				'node_modules/colors.css/css'
 			]
 		}
