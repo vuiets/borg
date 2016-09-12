@@ -16,10 +16,7 @@ module.exports = function (defaults) {
 		'app.less',
 		'assets/borg.css',
 		{
-			paths: [
-				'vendor',
-				'node_modules/colors.css/css'
-			]
+			paths: ['vendor']
 		}
 	));
 
