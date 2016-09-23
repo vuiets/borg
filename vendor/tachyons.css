@@ -1,4 +1,4 @@
-/*! TACHYONS v4.5.1 | http://tachyons.io */
+/*! TACHYONS v4.5.3 | http://tachyons.io */
 /*
  *
  *      ________            ______
@@ -1727,7 +1727,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .shadow-hover:hover::after, .shadow-hover:focus::after { opacity: 1; }
 /* Combine with classes in skins and skins-pseudo for 
  * thousands of different transition possibilities. */
-.bg-animate:hover, .bg-animate:focus { -webkit-transition: background-color .15s ease-in-out; transition: background-color .15s ease-in-out; }
+.bg-animate, .bg-animate:hover, .bg-animate:focus { -webkit-transition: background-color .15s ease-in-out; transition: background-color .15s ease-in-out; }
 /*
 
   Z-INDEX
