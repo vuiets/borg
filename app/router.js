@@ -8,7 +8,6 @@ const Router = Ember.Router.extend({
 
 Router.map(function () {
 	this.route('fontPairs');
-	this.route('headers');
 });
 
 export default Router;
