@@ -36,7 +36,7 @@
 		"ember-cli-qunit": "^2.1.0",
 		"ember-cli-release": "^0.2.9",
 		"ember-cli-sri": "^2.1.0",
-		"ember-cli-tachyons-shim": "4.9.0",
+		"ember-cli-tachyons-shim": "^4.9.1",
 		"ember-cli-test-loader": "1.1.0",
 		"ember-cli-uglify": "^1.2.0",
 		"ember-data": "^2.8.0",
@@ -44,7 +44,7 @@
 		"ember-load-initializers": "^0.5.1",
 		"ember-resolver": "^2.0.3",
 		"loader.js": "^4.0.1",
-		"tachyons": "4.9.0"
+		"tachyons": "^4.9.1"
 	},
 	"dependencies": {
 		"btns": "^1.1.0"

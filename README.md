@@ -2,7 +2,7 @@
 
 # Borg
 
-> :roller_coaster: A tachyons playground
+> :roller_coaster: A tachyons sandbox
 
 ## Prerequisites
 
